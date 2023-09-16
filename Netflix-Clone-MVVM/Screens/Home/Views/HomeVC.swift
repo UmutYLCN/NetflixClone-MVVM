@@ -55,7 +55,7 @@ class HomeVC: UIViewController {
         homeFeedTable.delegate = self
         homeFeedTable.dataSource = self
         homeFeedTable.register(CVTableViewCell.self, forCellReuseIdentifier: CVTableViewCell.identifier)
-        headerView = HeroHeaderUIView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 600))
+        headerView = HeroHeaderUIView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 500))
         homeFeedTable.tableHeaderView = headerView
     }
     
@@ -189,6 +189,7 @@ extension HomeVC :  UITableViewDelegate , UITableViewDataSource {
         return sectionTitles[section]
     }
     
+   
     
 }
 
