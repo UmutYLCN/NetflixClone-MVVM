@@ -24,7 +24,7 @@ class DownloadsVC: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationItem.largeTitleDisplayMode = .always
         cDownloadTable()
-        
+        fetchLocalStorageForDownload()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -112,7 +112,7 @@ extension DownloadsVC : UITableViewDelegate , UITableViewDataSource {
                 switch result {
                 case .success(let videoElement):
                     DispatchQueue.main.async {
-                        let vc = TitlePreviewViewController()
+                        let vc = TitlePreviewVC()
                         vc.configure(with: TitlePreviewViewModel(title: titleName, youtubeView: videoElement, titleOverview: title.overview ?? ""))
                         self?.navigationController?.pushViewController(vc, animated: true)
                     }

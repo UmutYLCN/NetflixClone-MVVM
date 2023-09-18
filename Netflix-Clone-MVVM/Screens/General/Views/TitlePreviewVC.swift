@@ -9,7 +9,7 @@ import UIKit
 import WebKit
 import SnapKit
 
-class TitlePreviewViewController: UIViewController {
+class TitlePreviewVC: UIViewController {
 
     private let titleLabel : UILabel = {
         let label = UILabel()

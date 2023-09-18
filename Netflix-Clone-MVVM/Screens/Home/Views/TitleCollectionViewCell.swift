@@ -36,7 +36,7 @@ class TitleCollectionViewCell: UICollectionViewCell {
         posterImageView.frame = contentView.bounds
     }
     
-    public func configure(with model :String){
+    public func configure(with model : String){
         guard let url = URL(string: "\(NetworkConstant.shared.imageServerAddress)\(model)") else {return}
         posterImageView.sd_setImage(with: url,completed: nil)
     }

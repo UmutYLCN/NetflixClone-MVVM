@@ -23,8 +23,8 @@ class HomeVC: UIViewController {
     
     private var randomTrendingMovie : Title?
     private var headerView : HeroHeaderUIView?
+
     let homeFeedTable = UITableView(frame: .zero,style: .grouped)
-    
     let sectionTitles : [String] = ["Trendıng Movıes", "Trendıng Tv","Populer","Upcomıng Movıes","Top Rated"]
     
     override func viewDidLoad() {
@@ -198,7 +198,7 @@ extension HomeVC : CVTVCellDelegate {
     func collectionViewTableViewCellDidTapCell(_ cell: CVTableViewCell, viewModel: TitlePreviewViewModel) {
         
         DispatchQueue.main.async { [weak self] in
-            let vc = TitlePreviewViewController()
+            let vc = TitlePreviewVC()
             vc.configure(with: viewModel)
             self?.navigationController?.pushViewController(vc, animated: true)
         }

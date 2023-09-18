@@ -23,6 +23,7 @@ class TitleTableViewCell: UITableViewCell {
     }()
     private let titleLabel : UILabel = {
         let label = UILabel()
+        label.numberOfLines = 0
         return label
     }()
     
@@ -53,6 +54,7 @@ class TitleTableViewCell: UITableViewCell {
         
         titleLabel.snp.makeConstraints { make in
             make.leading.equalTo(titlesPosterUIImageView.snp.trailing).offset(20)
+            make.trailing.equalTo(playTitleButton.snp.leading).offset(5)
             make.centerY.equalTo(contentView.snp.centerY)
         }
         

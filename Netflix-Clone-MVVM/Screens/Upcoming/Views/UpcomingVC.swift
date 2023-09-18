@@ -8,7 +8,6 @@
 import UIKit
 
 class UpcomingVC: UIViewController {
-
     
     private var upcomingTable = UITableView()
    
@@ -30,9 +29,8 @@ class UpcomingVC: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         fetchUpcoming()
-        
-        
     }
     
     func cUpcomingTable(){
@@ -52,17 +50,13 @@ class UpcomingVC: UIViewController {
             switch result {
             case .success(let titles):
                 self?.titles = titles
-                
-              
+        
                 DispatchQueue.main.async {
                     self?.upcomingTable.reloadData()
                 }
-                
-                
+        
             case .failure(let error):
                 print(error.localizedDescription)
-                
-    
             }
         }
     }
@@ -102,7 +96,7 @@ extension UpcomingVC : UITableViewDelegate , UITableViewDataSource {
             
             case .success(let videoElement):
                 DispatchQueue.main.async {
-                    let vc = TitlePreviewViewController()
+                    let vc = TitlePreviewVC()
                     vc.configure(with: TitlePreviewViewModel(title: titleName, youtubeView: videoElement , titleOverview: title.overview ?? ""))
                     self?.navigationController?.pushViewController(vc, animated: true)
                 }
@@ -112,6 +106,10 @@ extension UpcomingVC : UITableViewDelegate , UITableViewDataSource {
         }
         
     }
+
+    
+    
+    
 }
 
 
