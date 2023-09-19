@@ -15,13 +15,13 @@ class NetworkConstant {
     
     public var apiKey : String {
         get {
-            return "?api_key=7ca92030df8569b3253960ab36183fa4"
+            return "api key"
         }
     }
     
     public var Youtube_APIKey : String {
         get {
-            return "&key=AIzaSyCoOyGpjsaUvb1HcVZ9cx_TaJD5tv9b7g4"
+            return "youtube api key"
         }
     }
     

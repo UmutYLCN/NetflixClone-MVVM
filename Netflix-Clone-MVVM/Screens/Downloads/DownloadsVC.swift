@@ -19,7 +19,7 @@ class DownloadsVC: UIViewController {
     }
 
     func configure(){
-        title = "Upcoming"
+        title = "Download"
         view.backgroundColor = .systemBackground
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationItem.largeTitleDisplayMode = .always
