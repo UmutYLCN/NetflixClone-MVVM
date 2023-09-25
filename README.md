@@ -17,7 +17,6 @@
 - MVVM
 - UICollectionView
 - UITableView
-- Singleton Pattern
 - Youtube API
 - TMDP API
 - URLSession
