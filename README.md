@@ -18,7 +18,7 @@
 
 | Main Screen | Result Screen | Favourite Screen |
 | ----------- | ---------------- | ---------------- |
-|  <img src="https://github.com/UmutYLCN/NetflixClone-MVVM/assets/56222030/d6a5461b-125c-48a3-b4d8-da685ce7eccb"/> | <img src="https://github.com/UmutYLCN/NetflixClone-MVVM/assets/56222030/de87e759-5f68-4e42-aeed-56d59aa37c95"/> | <img src="https://github.com/UmutYLCN/NetflixClone-MVVM/assets/56222030/f1fe75bf-f9ff-4063-b8de-9db9152bf3ce" width="260"  height="530"/> |
+|  <img src="https://github.com/UmutYLCN/NetflixClone-MVVM/assets/56222030/d6a5461b-125c-48a3-b4d8-da685ce7eccb" width="260"  height="530" /> | <img src="https://github.com/UmutYLCN/NetflixClone-MVVM/assets/56222030/de87e759-5f68-4e42-aeed-56d59aa37c95" width="260"  height="530" /> | <img src="https://github.com/UmutYLCN/NetflixClone-MVVM/assets/56222030/f1fe75bf-f9ff-4063-b8de-9db9152bf3ce" width="260"  height="530"/> |
 
 | Main Screen | Result Screen | 
 | ----------- | ---------------- |
